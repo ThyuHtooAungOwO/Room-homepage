@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Room homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <article class="main">
+      <div class="grid__main">
+        <header class="hero container">
+          <nav class="nav">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="Hamburger Menu"
+              class="hamburger-icon"
+            />
+            <img src="./images/logo.svg" alt="Main Logo" class="main-logo" />
+            <ul class="nav__lists">
+              <li><a href="#" class="nav__lists-item">home</a></li>
+              <li><a href="#" class="nav__lists-item">shop</a></li>
+              <li><a href="#" class="nav__lists-item">about</a></li>
+              <li><a href="#" class="nav__lists-item">contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="discover__section container">
+          <div class="arrows">
+            <button class="arrow__btn">
+              <img
+                src="./images/icon-angle-left.svg"
+                alt="Left Arrow"
+                class="arrow"
+              />
+            </button>
+            <button class="arrow__btn">
+              <img
+                src="./images/icon-angle-right.svg"
+                alt="Right Arrow"
+                class="arrow"
+              />
+            </button>
+          </div>
+          <div class="discover__section-info text-block">
+            <h1 class="discover__section-info-title">
+              Discover innovative ways to decorate
+            </h1>
+            <p class="discover__section-info-description">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <div class="shopNow__section">
+              <span class="shopNow">shop now</span>
+              <button type="button" class="shopNow__btn">
+                <img src="./images/icon-arrow.svg" alt="Right Arrow" />
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="grid__secondary">
+        <section class="darkImage__section">
+          <img
+            src="./images/image-about-dark.jpg"
+            alt="picture of modern black chairs"
+          />
+        </section>
+        <section class="about__section container">
+          <div class="about__section-info text-block">
+            <h4 class="about__section-info-title">About our furniture</h4>
+            <p class="about__section-info-description">
+              Our multifunctional collection blends design and function to suit
+              your individual taste. Make each room unique, or pick a cohesive
+              theme that best express your interests and what inspires you. Find
+              the furniture pieces you need, from traditional to contemporary
+              styles or anything in between. Product specialists are available
+              to help you create your dream space.
+            </p>
+          </div>
+        </section>
+        <section class="lightImage__section">
+          <img
+            src="./images/image-about-light.jpg"
+            alt="picture of tall light chair"
+          />
+        </section>
+      </div>
+    </article>
+
+    <div class="mobile-menu-overlay"></div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__nav">
+        <button
+          type="button"
+          class="close-menu-btn"
+          id="menuCloseBtn"
+          aria-label="Close menu"
+        >
+          <img
+            src="./images/icon-close.svg"
+            alt="Cross btn icon"
+            aria-hidden="true"
+          />
+        </button>
+      </div>
+      <ul class="mobile-menu__list">
+        <li><a href="#" class="mobile-menu__link">home</a></li>
+        <li><a href="#" class="mobile-menu__link">shop</a></li>
+        <li><a href="#" class="mobile-menu__link">about</a></li>
+        <li><a href="#" class="mobile-menu__link">contact</a></li>
+      </ul>
+    </nav>
+    <!-- 
+
+ We are available all across the globe
+
+With stores all over the world, it's easy for you to find furniture
+            for your home or place of business. Locally, we’re in most major
+            cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.
+
+  Manufactured with the best materials
+
+  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+  experience in this industry, we understand what customers want for their home and office.
+
+  Shop now
+
+
+
+ 
+   -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

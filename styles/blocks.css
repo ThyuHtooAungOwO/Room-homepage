@@ -1,0 +1,243 @@
+.container {
+  padding: 3rem 1.75rem;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  /* max-width: 1440px; */
+  min-height: 100vh;
+}
+
+.hero {
+  background-image: url("../images/mobile-image-hero-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 22rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-icon {
+  width: auto;
+  cursor: pointer;
+}
+
+.nav__lists {
+  display: none;
+}
+
+.main-logo {
+  width: auto;
+  margin-right: 40%;
+}
+
+.discover__section {
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  right: 0;
+  top: -46px;
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  padding: 1rem;
+  gap: 2.5rem;
+}
+
+.arrow__btn {
+  width: 8px;
+}
+
+.discover__section-info-title {
+  font-size: 2.3rem;
+  font-weight: var(--fw-bold);
+}
+
+.shopNow__section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.shopNow {
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: var(--fw-medium);
+}
+
+.about__section-info-title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--white);
+  z-index: 100;
+  transition: right 0.3s ease-in-out;
+  padding: var(--space-xl) var(--space-md);
+  display: flex;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  justify-content: space-between;
+}
+
+.mobile-menu.open {
+  top: 0;
+}
+
+.mobile-menu__list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: var(--fw-semiBold);
+  cursor: pointer;
+  text-align: center;
+}
+
+.close-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.close-menu-btn:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 48em) {
+  .container {
+    padding: 4rem 4.75rem;
+  }
+
+  .grid__main {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "hero discover";
+    width: 100%;
+  }
+
+  .hero {
+    grid-area: hero;
+    background-image: url("../images/desktop-image-hero-1.jpg");
+    width: 100%;
+    height: auto;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .main-logo {
+    margin-right: 10%;
+  }
+
+  .nav__lists {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  .nav__lists-item {
+    font-size: 1.25rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    color: var(--white);
+    font-weight: var(--fw-semiBold);
+  }
+
+  .discover__section {
+    grid-area: discover;
+    padding: 12rem 4rem;
+  }
+
+  .arrows {
+    top: unset;
+    right: unset;
+    left: 0;
+    bottom: 0;
+    padding: 1.5rem;
+    gap: 5rem;
+  }
+
+  .arrow__btn {
+    width: 12px;
+  }
+
+  .grid__secondary {
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "dark about light";
+    width: 100%;
+  }
+
+  .darkImage__section {
+    grid-area: dark;
+  }
+
+  .lightImage__section {
+    grid-area: light;
+  }
+
+  .lightImage__section img {
+    height: 100%;
+  }
+
+  .darkImage__section img {
+    height: 100%;
+  }
+
+  .about__section {
+    grid-area: about;
+    padding: 6rem 3rem;
+  }
+}
