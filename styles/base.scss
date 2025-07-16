@@ -9,6 +9,7 @@
 body {
   font-family: var(--ff-League-Spartan);
   color: var(--grey-500);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,9 +46,8 @@ h5 {
 
 p {
   line-height: 1.4;
-}
-@media (min-width: 48em) {
-  p {
+
+  @media (min-width: 48em) {
     line-height: 1.6;
   }
-}/*# sourceMappingURL=base.css.map */
+}
