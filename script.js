@@ -43,7 +43,6 @@ let currentSlideIndex = 0;
 const updateSlideContent = () => {
   const slide = slidesData[currentSlideIndex];
 
-  // Update background image based on screen width
   if (window.innerWidth >= 768) {
     heroImageContainer.style.backgroundImage = `url(${slide.desktopImage})`;
   } else {
@@ -57,7 +56,7 @@ const updateSlideContent = () => {
 const goToNextSlide = () => {
   currentSlideIndex++;
   if (currentSlideIndex >= slidesData.length) {
-    currentSlideIndex = 0; // Wrap around to the first slide
+    currentSlideIndex = 0;
   }
   updateSlideContent();
 };
@@ -65,7 +64,7 @@ const goToNextSlide = () => {
 const goToPreviousSlide = () => {
   currentSlideIndex--;
   if (currentSlideIndex < 0) {
-    currentSlideIndex = slidesData.length - 1; // Wrap around to the last slide
+    currentSlideIndex = slidesData.length - 1;
   }
   updateSlideContent();
 };
